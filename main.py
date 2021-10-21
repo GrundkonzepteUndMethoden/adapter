@@ -3,7 +3,7 @@ from sensoren.DeutscherSensor import DeutscherTemperaturSensor
 from sensoren.AmerikanischerSensor import AmerikanischerTemperaturSensor
 from sensoren.AmerikanischerSensor2 import AmerikanischerTemperaturSensor2
 
-from SensorSockelAdapter import SensorSockelAdapter
+from SensorSockelAdapter import SensorSockelAdapter, SensorSockelAdapter2
 
 if __name__ == "__main__":
     #Deutscher Sensor
@@ -22,3 +22,8 @@ if __name__ == "__main__":
     adapter2 = SensorSockelAdapter(sensor_a2)
     anschluss3 = TemperaturSensorAnschluss(adapter2)
     print(anschluss3.sendeDatenAnSmartHomeStation())
+
+    #Mit Klassenadapter
+    adapter3 = SensorSockelAdapter2()
+    anschluss4 = TemperaturSensorAnschluss(adapter3)
+    print(anschluss4.sendeDatenAnSmartHomeStation())
