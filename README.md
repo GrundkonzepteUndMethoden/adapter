@@ -1,4 +1,4 @@
-# Gruppe 4 - Strukurmuster - Adapter
+# Gruppe 4 - Strukturmuster - Adapter
 Repository mit Quellcode für den Vortrag über das Adapter Pattern
 
 Inhalt des Repositorys:
